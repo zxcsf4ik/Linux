@@ -17,9 +17,11 @@ gcc -O2 -Wall -Wextra -o taskglobal1 taskglobal1.c
 Адреси сегментів йдуть у порядку: text < data/bss < heap < stack.
 
 Запуск taskglobal1 (64-біт):
+
 <img width="732" height="426" alt="image" src="https://github.com/user-attachments/assets/3bd60375-15d0-4d51-b4c9-599ab9328490" />
 
 Запуск taskglobal1 з прапорцем `-m32` (32-біт):
+
 <img width="605" height="383" alt="image" src="https://github.com/user-attachments/assets/354333f1-e0c4-4ce7-a049-e9ccf4f1ce20" />
 ---
 
@@ -67,6 +69,7 @@ gcc -Wall -o taskglobal3 taskglobal3.c && ./taskglobal3
 Адреси підтверджують теорію: text — найнижчі, потім data/bss, heap вище, stack — найвищий.
 
 Запуск taskglobal3:
+
 <img width="662" height="167" alt="image" src="https://github.com/user-attachments/assets/a96c95e6-7e54-4ce4-8c9a-6fb26884d018" />
 ---
 
@@ -93,6 +96,7 @@ sudo gdb -p PID -batch -ex "bt"
 GDB виводить стек викликів: `main` → `foo` → `bar` → `bar_is_now_closed` → `pause`.
 
 Запуск taskglobal4 та GDB backtrace:
+
 <img width="896" height="289" alt="image" src="https://github.com/user-attachments/assets/eb2c60fe-dcd6-4830-b894-95e2f2f6f35d" />
 
 ---
@@ -117,5 +121,6 @@ gcc -O2 -Wall -Wextra -o taskv14 taskv14.c
 Програма виводить таблицю всіх сегментів пам'яті поточного процесу: адреси, права доступу, зміщення, шляхи. Загальна кількість сегментів і сумарний обсяг мапленої пам'яті.
 
 Запуск taskv14:
+
 <img width="882" height="586" alt="image" src="https://github.com/user-attachments/assets/f99eab4a-6fca-4ab2-83ea-d7cf2d41ab5c" />
 
