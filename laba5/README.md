@@ -24,43 +24,7 @@ valgrind --leak-check=full ./fragmentation
 
 ### Виконання програми
 
-```
-=== Демонстрація фрагментації пам'яті ===
-
-Етап 1 - Виділили: a(1KB), b(10KB), c(1KB)
-a = 0x4a9c480
-b = 0x4a9c8c0
-c = 0x4a9f100
-Вільної пам'яті: ~11+ KB
-
-Етап 2 - Звільнили b (10KB)
-Теоретично вільно: 10 KB + деякі пустоти
-
-Етап 3 - Спробуємо виділити 8KB...
-✓ Успішно: d = 0x4a9f540
-
-Етап 4 - Створюємо фрагментацію через чередування алокацій
-Звільнили a та c
-Вільна пам'ять: 1KB + 1KB = 2KB роздільно
-
-Етап 5 - Спробуємо виділити 2KB поспіль...
-✓ Успішно (malloc об'єднав вільні блоки)
-
-=== Висновок ===
-Фрагментація = вільна пам'ять розбита на малі шматки
-Результат: велика алокація неможлива, хоч сумарно пам'яти досить
-```
-
-### Valgrind звіт
-
-```
-HEAP SUMMARY:
-    in use at exit: 0 bytes in 0 blocks
-    total heap usage: 6 allocs, 6 frees, 23,552 bytes allocated
-
-All heap blocks were freed -- no leaks are possible
-ERROR SUMMARY: 0 errors from 0 contexts
-```
+<img width="578" height="592" alt="image" src="https://github.com/user-attachments/assets/0c16ae83-23d6-418b-b8fa-1d0372335a87" />
 
 ## Схема фрагментації
 
