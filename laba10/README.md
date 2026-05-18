@@ -26,6 +26,8 @@ gcc parent.c -o parent
 
 ## Результати
 
+<img width="426" height="198" alt="image" src="https://github.com/user-attachments/assets/ab2ec3b3-8e2d-498b-b06f-2a237b4451c1" />
+
 ---
 
 ## Висновки
