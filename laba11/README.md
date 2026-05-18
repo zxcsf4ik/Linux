@@ -22,7 +22,6 @@
 
 ## Компіляція та запуск
 
-```bash
 gcc timer_signals.c -o timer_signals -lrt
 ./timer_signals
 
