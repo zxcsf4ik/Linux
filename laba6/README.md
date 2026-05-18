@@ -41,6 +41,7 @@ echo "Original test content" > test_file.txt
 
 Порівняння обох режимів:
 
+<img width="863" height="585" alt="image" src="https://github.com/user-attachments/assets/0a16a55c-be60-4e86-a64c-a076df9838ec" />
 
 ---
 
