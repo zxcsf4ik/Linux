@@ -97,23 +97,9 @@ gcc reader.c -o reader
 ```bash
 ./reader
 ```
+## Скріншот роботи
 
-### Приклад роботи програми
-
-```
-Data written to shared memory.
-
-Temperature:    36.60 C
-Voltage:        12.50 V
-Device status:  ON
-Message:        Device is working normally
-```
-
----
-
-## Скріншоти роботи
-
-
+<img width="441" height="131" alt="image" src="https://github.com/user-attachments/assets/3be1bb57-0950-4a19-887f-2f01b6c65f64" />
 
 ## Висновок
 
