@@ -22,11 +22,12 @@
 
 ## Компіляція та запуск
 
-```bash
 gcc timer_signals.c -o timer_signals -lrt
 ./timer_signals
 
 ## Результати
+
+<img width="549" height="101" alt="image" src="https://github.com/user-attachments/assets/a9fa8bd1-eab1-4c77-8bf5-9341a2c096e4" />
 
 Програма успішно надіслала сигнали через POSIX-таймер та здійснила підрахунок метрик:
 - Кількість надісланих сигналів
